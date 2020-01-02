@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa6c1e3b-fc2c-4e16-868a-152ea3b7e9e5" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+        <option value="Clojure Test Namespace" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1VpqHoP4poDYDHiAYKEY4g4fNpS" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="cursive.last.file.extension./Users/bamdad.dashtban/projects/udp-client-server/src" value="clj" />
+    <property name="cursive.last.file.extension./Users/bamdad.dashtban/projects/udp-client-server/test" value="clj" />
+  </component>
+  <component name="ReplState" timestamp="1577965251833">{:repl-history {:ide [], :local [{:command &quot;(start 12345 println)&quot;, :offset 21, :ns &quot;udp-client-server.server&quot;} {:command &quot;(let [my-future (start 123456 println)\n      ]\n  (future-cancel my-future)\n  (close-udp-server socket))&quot;, :offset 103, :ns &quot;udp-client-server.server&quot;} {:command &quot;(packet (get-bytes-utf8 \&quot;You might receive this.\&quot;) (make-address \&quot;127.0.0.1\&quot;) 1024)&quot;, :offset 83, :ns &quot;udp-client-server.server&quot;} {:command &quot;(def socket (create-udp-server 1024))&quot;, :offset 37, :ns &quot;udp-client-server.server&quot;} {:command &quot;(def socket (create-udp-server 1025))&quot;, :offset 37, :ns &quot;udp-client-server.server&quot;} {:command &quot;(def my-future (receive-loop socket (empty-packet 512) println))&quot;, :offset 64, :ns &quot;udp-client-server.server&quot;} {:command &quot;(packet (get-bytes-utf8 \&quot;You might receive this.\&quot;) (make-address \&quot;127.0.0.1\&quot;) 1025)&quot;, :offset 83, :ns &quot;udp-client-server.server&quot;} {:command &quot;(packet \&quot;asdadasd\&quot; \&quot;localhost\&quot; 1224)&quot;, :offset 35, :ns &quot;udp-client-server.server&quot;} {:command &quot;(packet (get-bytes-utf8 \&quot;You might receive this.\&quot;) (make-address \&quot;127.0.0.1\&quot;) 1324)&quot;, :offset 83, :ns &quot;udp-client-server.server&quot;} {:command &quot;(send-message socket packet)&quot;, :offset 28, :ns &quot;udp-client-server.server&quot;} {:command &quot;(let [p (packet (get-bytes-utf8 \&quot;You might receive this.\&quot;) (make-address \&quot;127.0.0.1\&quot;) 1324)]\n  (send-message socket p))&quot;, :offset 119, :ns &quot;udp-client-server.server&quot;} {:command &quot;(let [p (packet (get-bytes-utf8 \&quot;You might receive this.\&quot;) (make-address \&quot;127.0.0.1\&quot;) 1025)]\n  (send-message socket p))&quot;, :offset 119, :ns &quot;udp-client-server.server&quot;} {:command &quot;(let [server (start 12344 println)]\n  (send :test server)\n  (future-cancel (:future server))\n  (close-udp-server (:socket server)))&quot;, :offset 131, :ns &quot;udp-client-server.server&quot;} {:command &quot;(let [server (start 12344 println)]\n  (send \&quot;test\&quot; server)\n  (future-cancel (:future server))\n  (close-udp-server (:socket server)))&quot;, :offset 132, :ns &quot;udp-client-server.server&quot;} {:command &quot;(let [server (start 12344 println)]\n  (send \&quot;test2\&quot; server)\n  (future-cancel (:future server))\n  (close-udp-server (:socket server)))&quot;, :offset 133, :ns &quot;udp-client-server.server&quot;} {:command &quot;(deftest server\n  (let [port (get-free-port)\n        _ (prn port)\n        s (server/start port println)]\n    (server/send \&quot;test2\&quot; s)\n    (server/shutdown s)))&quot;, :offset 158, :ns &quot;udp-client-server.server-test&quot;} {:command &quot;(server/start 665544)&quot;, :offset 20, :ns &quot;udp-client-server.server-test&quot;} {:command &quot;(udp-client-server.server/start 665544 println)&quot;, :offset 33, :ns &quot;udp-client-server.server-test&quot;} {:command &quot;(udp-client-server.server/start 66544 println)&quot;, :offset 34, :ns &quot;udp-client-server.server-test&quot;} {:command &quot;(udp-client-server.server/start 6644 println)&quot;, :offset 34, :ns &quot;udp-client-server.server&quot;} {:command &quot;(defn get-free-port []\n  (let [socket (ServerSocket. 0)]\n    (.close socket)\n    (.getLocalPort socket)))&quot;, :offset 105, :ns &quot;udp-client-server.server-test&quot;} {:command &quot;(udp-client-server.server/start (udp-client-server.server-test/get-free-port) println)&quot;, :offset 76, :ns &quot;udp-client-server.server&quot;} {:command &quot;(send \&quot;hi\&quot; (udp-client-server.server/start (udp-client-server.server-test/get-free-port) println))&quot;, :offset 9, :ns &quot;udp-client-server.server&quot;} {:command &quot;(-&gt;&gt; (udp-client-server.server/start (udp-client-server.server-test/get-free-port) println)\n(send \&quot;hello\&quot;)\n(shutdown))&quot;, :offset 91, :ns &quot;udp-client-server.server&quot;} {:command &quot;(-&gt;&gt; (udp-client-server.server/start (udp-client-server.server-test/get-free-port) println)\n(send \&quot;hello\&quot;)\n)&quot;, :offset 107, :ns &quot;udp-client-server.server&quot;} {:command &quot;(-&gt;&gt; (udp-client-server.server/start (udp-client-server.server-test/get-free-port) println)\n(send \&quot;hello\&quot;)\n     (shutdown)\n)&quot;, :offset 121, :ns &quot;udp-client-server.server&quot;} {:command &quot;(conj [] \&quot;asdaa\&quot;)&quot;, :offset 15, :ns &quot;udp-client-server.server&quot;} {:command &quot;(conj [] \&quot;asdaa\&quot; \&quot;asda\&quot;)&quot;, :offset 22, :ns &quot;udp-client-server.server&quot;} {:command &quot;(conj (conj [] \&quot;asdaa\&quot;) \&quot;asdad\&quot;)&quot;, :offset 30, :ns &quot;udp-client-server.server&quot;} {:command &quot;(deftest server\n  (let [port (get-free-port)\n        state (atom [])]\n    (-&gt;&gt; (server/start port #(swap! state conj %))\n         (server/send \&quot;message 1\&quot;)\n         (server/send \&quot;message 2\&quot;)\n         (server/send \&quot;message 3\&quot;)\n         (server/shutdown))\n    (Thread/sleep 1)\n    (is (= @state []))))&quot;, :offset 299, :ns &quot;udp-client-server.server-test&quot;} {:command &quot;(deftest server\n  (let [port (get-free-port)\n        state (atom [])]\n    (-&gt;&gt; (server/start port #(swap! state conj %))\n         (server/send \&quot;message 1\&quot;)\n         (server/send \&quot;message 2\&quot;)\n         (server/send \&quot;message 3\&quot;)\n         (server/shutdown))\n    (Thread/sleep 10)\n    (is (= @state []))))&quot;, :offset 300, :ns &quot;udp-client-server.server-test&quot;}], :remote []}}</component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="REPL" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <module name="udp-client-server" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <module name="" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="fixLineNumbers" value="false" />
+      <module name="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Downloads/example" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/recfun" value="PREVIEW" />
+        <entry key="$USER_HOME$/babylon/data-bazaar-bff" value="PREVIEW" />
+        <entry key="$USER_HOME$/babylon/data-bazaar-datasets" value="PREVIEW" />
+        <entry key="$USER_HOME$/babylon/data-bazaar-scala-template" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa6c1e3b-fc2c-4e16-868a-152ea3b7e9e5" name="Default Changelist" comment="" />
+      <created>1577960298539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577960298539</updated>
+      <workItem from="1577960300071" duration="4714000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
